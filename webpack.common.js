@@ -9,7 +9,9 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Production',
+            template: path.join(__dirname, 'index.html'),
+            filename: 'index.html',
+            title: 'Development',
         }),
         new ESLintPlugin({
             extensions: "js",
